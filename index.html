@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Game Leaderboard</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Game Leaderboard</h1>
-  <div class="game-container">
-    <button id="play-btn">Play Game</button>
-    <div id="score-container"></div>
-  </div>
-  <script src="script.js"></script>
+    <div class="container">
+        <h1>Clicker Game Leaderboard</h1>
+        <p>Your Score: <span id="score">0</span></p>
+        <button id="clickButton">Click Me!</button>
+        <p>Leaderboard:</p>
+        <ol id="leaderboard">
+            <!-- Leaderboard entries will be added dynamically using JavaScript -->
+        </ol>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
