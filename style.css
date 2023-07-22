@@ -1,42 +1,45 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
 }
 
+.container {
+  margin: 50px auto;
+  max-width: 320px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
 h1 {
-  color: #333;
-}
-
-.game-container {
-  margin-top: 50px;
-}
-
-#score-container {
-  margin-top: 20px;
+  margin-top: 0;
+  color: #3498db;
 }
 
 button {
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #4CAF50;
-  color: white;
+  font-size: 18px;
+  background-color: #3498db;
+  color: #fff;
   border: none;
   cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #2980b9;
 }
 
-/* Responsive design for smaller screens (mobile devices) */
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
+ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
 
-  .game-container {
-    margin-top: 20px;
-  }
+li {
+  margin: 10px 0;
 }
